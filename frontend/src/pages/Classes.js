@@ -10,7 +10,7 @@ const Classes = () => {
   const [error, setError] = useState('');
   const [filters, setFilters] = useState({ type: '', minDuration: '', maxDuration: '' });
 
-  useEffect(() => {
+  useEffect(() => { // eslint-disable-line react-hooks/exhaustive-deps
     fetchClasses();
   }, [filters]);
 
